@@ -45,6 +45,22 @@ const (
 	// by a PV).
 	RelBackedBy = "BACKED_BY"
 
+	// RelCalls indicates that the source code symbol calls the target
+	// (e.g., a function calls another function, a method calls a method).
+	RelCalls = "CALLS"
+
+	// RelImports indicates that the source code symbol imports the target
+	// (e.g., a Go file imports a package, a module imports a module).
+	RelImports = "IMPORTS"
+
+	// RelExtends indicates that the source code symbol extends the target
+	// (e.g., a class extends another class, an interface extends an interface).
+	RelExtends = "EXTENDS"
+
+	// RelImplements indicates that the source code symbol implements the target
+	// (e.g., a struct implements an interface).
+	RelImplements = "IMPLEMENTS"
+
 	// RelManagedBy indicates that the source resource is managed or
 	// controlled by the target (e.g., a deployment manages replica pods,
 	// CloudFormation manages a stack of resources).
